@@ -16,7 +16,7 @@ const PublicSidebar = ({ toggleSidebar, navOpen }) => {
             ></div>
             <div className={`absolute left-0 top-0 z-50 ${navOpen ? 'block w-[250px]' : 'hidden'} md:block md:w-[250px] h-screen bg-[#202a3b] overflow-y-hidden duration-300 ease-linear shadow-2xl`}>
                 <div className='flex justify-between items-center mt-3 px-4'>
-                    <div className='text-white md:ml-4'>Smart Climate Education</div>
+                    <div className='text-white md:ml-4'>Climate Crash Course</div>
                     <AiOutlineClose size={17} className='text-red-500 cursor-pointer md:hidden ' onClick={toggleSidebar} />
                 </div>
                 <div className='w-full mt-8 p-4'>

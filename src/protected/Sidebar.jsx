@@ -27,7 +27,7 @@ const Sidebar = ({ toggleSidebar, navOpen }) => {
 
                 <div className='w-full px-6 py-6 mb-8 md:mt-8 border-b border-orange-200'>
                     <div className='w-full flex justify-center'>
-                        <FaUserCircle size={35} className='cursor-pointer text-orange-950' />
+                        <FaUserCircle size={35} className='cursor-pointer text-[#283890]' />
                     </div>
                     <div className='w-full flex justify-center'>
                         <span className='text-green-600 text-xs'>{user && user?.email}</span>

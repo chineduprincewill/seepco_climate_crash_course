@@ -10,14 +10,14 @@ const PublicHeader = ({ toggleSidebar }) => {
         <div className='w-full flex justify-between items-center fixed top-0 inset-0 z-10 py-4 px-6 text-white h-12 bg-[#202a3b] shadow-xl'>
             <div className='flex space-x-4 items-center'>
                 <RxHamburgerMenu size={20} className='text-white cursor-pointer md:hidden' onClick={toggleSidebar} />
-                <div>Smart Climate Education</div>
+                <div>Climate Crash Course</div>
             </div>
             
             <div className='flex items-center space-x-3 text-sm'>
-                <Link to='https://ecogreenafrica.org' className='hover:text-[#ff9e29]'>
-                    <span className='hidden md:block'>Ecogreen Africa</span>
+                <a href='https://www.stoilmgt.com/' className='hover:text-[#ff9e29]' target="_blank" rel="noopener noreferrer">
+                    <span className='hidden md:block'>SEEPCO</span>
                     <img src='/assets/logo-only.png' alt='header-logo' width='30px' className='block md:hidden' />
-                </Link>
+                </a>
                 {
                     loc.pathname !== '/' && <Link to='/' className='hover:text-[#ff9e29]'>Home</Link>
                 }

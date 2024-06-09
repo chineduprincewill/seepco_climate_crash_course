@@ -37,7 +37,7 @@ const Navlinks = () => {
             {
                 navlinks !== null && navlinks.map(nav => {
                     return (
-                        <li key={nav.id} className={`${locatn.pathname === nav.url || locatn.pathname.includes(nav.url.replace("/",'')) ? 'bg-orange-950 text-gray-100 font-semibold' : 'text-orange-950'} px-3 py-2 rounded-md `}>
+                        <li key={nav.id} className={`${locatn.pathname === nav.url || locatn.pathname.includes(nav.url.replace("/",'')) ? 'bg-[#283890] hover:bg-[#252e61] text-white font-semibold' : 'text-orange-950'} px-3 py-2 rounded-md `}>
                             <Link to={nav.url} key={nav.id} className='flex justify-start items-center space-x-3 my-1'>
                                 {nav.icon}
                                 <span>{nav.title}</span>

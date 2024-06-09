@@ -43,48 +43,44 @@ const Login = () => {
             </div>
             <div className='w-full md:w-1/2 h-screen flex  justify-center items-center p-4 md:p-0'>
                 <div className='w-full md:w-3/4'>
-                    <div className='w-full flex justify-center md:hidden'>
-                        <img src='/assets/logo.jpg' alt='logo' width="200px" />
+                    <div className='w-full flex justify-center'>
+                        <img src='/assets/logo.png' alt='logo' width="100px" />
                     </div>
-                    <div className='w-full flex justify-center mb-6'>  
-                        <span className='text-xl md:text-3xl text-orange-950'>Climate Smart Education</span>
-                    </div>
-                    <div className='w-full flex justify-center space-x-1 items-center'>
-                        <CiUnlock size={40} />
-                        <span className='text-4xl font-extralight'>Login</span>
+                    <div className='w-full flex justify-center my-4'>  
+                        <span className='text-xl md:text-3xl text-orange-950'>Climate Crash Course</span>
                     </div>
                     <div className='w-full p-4'>
                         <ToastContainer />
-                        <form onSubmit={handleLogin} className='w-full space-y-3'>
+                        <form onSubmit={handleLogin} className='w-full space-y-6'>
                             <div className='w-full space-y-2'>
-                                <label>Email</label>
                                 <input 
                                     type='text' 
                                     className='w-full p-3 border border-gray-400 rounded-md' 
                                     onChange={(e) => setEmail(e.target.value)}
                                     required
+                                    placeholder='Email'
                                 />
                             </div>
                             <div className='w-full space-y-2'>
-                                <label>Password</label>
                                 <input 
                                     type='password' 
                                     className='w-full p-3 border border-gray-400 rounded-md' 
                                     onChange={(e) => setPassword(e.target.value)}
                                     required
+                                    placeholder='Password'
                                 />
                             </div>
                             <div>
                                 {
                                     loggingin ? 
                                         <button
-                                            className='w-full flex justify-center px-4 py-3 rounded-md mt-7 bg-orange-950 hover:bg-orange-900 text-white'
+                                            className='w-full flex justify-center px-4 py-3 rounded-md mt-3 bg-[#252e61] text-white'
                                             disabled
                                         >
                                             <ButtonLoader />
                                         </button>
                                         :
-                                        <button className='w-full p-3 rounded-md mt-4 bg-orange-950 hover:bg-orange-900 text-white'>
+                                        <button className='w-full p-3 rounded-md bg-[#283890] hover:bg-[#252e61] text-white'>
                                             Login
                                         </button>
                                 }
